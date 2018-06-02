@@ -1,8 +1,8 @@
-<!DOCTYPE html>
+<!DOCTYPE html
 <html lang="es">
 <head>
 	<meta charset="UTF-8">
-	<title>Invie Fixed</title>
+	<title>Invie Responsive</title>
 	<style media="screen">
 
 		body{
@@ -13,11 +13,26 @@
 		img{
 			max-width: 100%;
 			vertical-align: top;
+
+		}
+
+		img#responsive{
+			display:none;
+		}
+
+		@media screen and (max-width:768px){
+			img {
+				display: none;
+			}
+			img#responsive{
+				display:block;!important
+			}
 		}
 
 	</style>
 </head>
 <body>
+	<img src="img/invie-responsive.png" id="responsive" alt="">
 	<img src="img/header.jpg" alt="">
 	<img src="img/hero.jpg" alt="">
 		<img src="img/acustica.jpg" alt="">
